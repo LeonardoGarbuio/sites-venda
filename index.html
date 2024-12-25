@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Futurista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&family=Tahoma&family=Verdana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/novo.css">
+</head>
+<body>
+    <h2>Bem-vindo ao Formulário</h2>
+    <!-- Método POST -->
+    <form id="emailForm" method="POST">
+        <!-- Campo de Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        <div class="error-message" id="emailError" style="display:none; color: red;" aria-live="polite"></div>
+
+        <!-- Campo de Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <div class="error-message" id="senhaError" style="display:none; color: red;" aria-live="polite"></div>
+
+        <!-- Campo de Confirmar Senha -->
+        <label for="confirmarSenha">Confirmar Senha:</label>
+        <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+        <div class="error-message" id="confirmarSenhaError" style="display:none; color: red;" aria-live="polite"></div>
+
+        <!-- Botão de Enviar -->
+        <button type="submit">Enviar</button>
+
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage" style="display: none; color: #00e5ff; font-size: 20px; margin-top: 20px;"></div>
+    </form>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
